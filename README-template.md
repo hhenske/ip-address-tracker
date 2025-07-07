@@ -1,3 +1,73 @@
+## ✅ Project To-Do List
+
+### 🏁 Phase 1: Project Setup
+- [x] Initialize Git repo and push to GitHub
+- [x] Add `.gitignore` (ignore `node_modules`, `.env`, etc.)
+- [x] Include a working `README.md` (add live preview link later)
+- [ ] Link the Rubik font in `index.html` from Google Fonts
+- [ ] Set up base CSS (reset or normalize)
+
+---
+
+### 🧱 Phase 2: HTML Structure
+- [ ] Create layout in `index.html`:
+  - [ ] Header with title and search bar
+  - [ ] Info panel showing IP Address, Location, Timezone, ISP
+  - [ ] Map placeholder below the panel
+- [ ] Use semantic HTML and accessible labels
+
+---
+
+### 🎨 Phase 3: CSS Styling
+- [ ] Style the header and input area:
+  - [ ] Background image from `/images`
+  - [ ] Rounded input with search icon button
+  - [ ] Font sizes and spacing per style guide
+- [ ] Style the info panel:
+  - [ ] White card with 4 data points (horizontal on desktop)
+  - [ ] Stack vertically (mobile)
+- [ ] Responsive layout:
+  - [ ] Mobile (375px): stacked
+  - [ ] Desktop (1440px): horizontal layout
+- [ ] Add hover/focus states to input and button
+
+---
+
+### ⚙️ Phase 4: JavaScript Functionality
+- [ ] Fetch IP/location on page load using IPify API
+- [ ] Populate info panel (IP, location, timezone, ISP)
+- [ ] Initialize LeafletJS map:
+  - [ ] Add marker at IP location
+  - [ ] Center view on marker
+- [ ] Enable search:
+  - [ ] Accept IP or domain input
+  - [ ] Update info panel and map marker
+
+---
+
+### 🧼 Phase 5: Final Touches
+- [ ] Add loading state and error handling
+- [ ] Polish mobile spacing and responsive behavior
+- [ ] Ensure accessibility (labels, focus, alt text)
+- [ ] Add metadata and favicon
+- [ ] Deploy to GitHub Pages / Netlify / Vercel
+- [ ] Update `README.md` with:
+  - [ ] Live site URL
+  - [ ] Stack used (HTML, CSS, JS, Leaflet, IPify API)
+  - [ ] Setup instructions
+
+---
+
+### ✨ Optional Enhancements
+- [ ] Accept domain names in input (e.g., `example.com`)
+- [ ] Show country flag or street-level detail
+- [ ] Animate marker on search
+- [ ] Add dark/light mode toggle
+
+
+
+
+
 # Frontend Mentor - IP address tracker solution
 
 This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
