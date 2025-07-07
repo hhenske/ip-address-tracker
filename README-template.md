@@ -4,8 +4,8 @@
 - [x] Initialize Git repo and push to GitHub
 - [x] Add `.gitignore` (ignore `node_modules`, `.env`, etc.)
 - [x] Include a working `README.md` (add live preview link later)
-- [ ] Link the Rubik font in `index.html` from Google Fonts
-- [ ] Set up base CSS (reset or normalize)
+- [x] Link the Rubik font in `index.html` from Google Fonts
+- [x] Set up base CSS (reset or normalize)
 
 ---
 
