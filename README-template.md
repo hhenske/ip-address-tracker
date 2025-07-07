@@ -11,25 +11,25 @@
 
 ### 🧱 Phase 2: HTML Structure
 - [ ] Create layout in `index.html`:
-  - [ ] Header with title and search bar
-  - [ ] Info panel showing IP Address, Location, Timezone, ISP
-  - [ ] Map placeholder below the panel
-- [ ] Use semantic HTML and accessible labels
+  - [x] Header with title and search bar
+  - [x] Info panel showing IP Address, Location, Timezone, ISP
+  - [x] Map placeholder below the panel
+- [x] Use semantic HTML and accessible labels
 
 ---
 
 ### 🎨 Phase 3: CSS Styling
-- [ ] Style the header and input area:
-  - [ ] Background image from `/images`
-  - [ ] Rounded input with search icon button
-  - [ ] Font sizes and spacing per style guide
-- [ ] Style the info panel:
-  - [ ] White card with 4 data points (horizontal on desktop)
-  - [ ] Stack vertically (mobile)
-- [ ] Responsive layout:
-  - [ ] Mobile (375px): stacked
-  - [ ] Desktop (1440px): horizontal layout
-- [ ] Add hover/focus states to input and button
+- [x] Style the header and input area:
+  - [x] Background image from `/images`
+  - [x] Rounded input with search icon button
+  - [x] Font sizes and spacing per style guide
+- [x] Style the info panel:
+  - [x] White card with 4 data points (horizontal on desktop)
+  - [x] Stack vertically (mobile)
+- [x] Responsive layout:
+  - [x] Mobile (375px): stacked
+  - [x] Desktop (1440px): horizontal layout
+- [x] Add hover/focus states to input and button
 
 ---
 

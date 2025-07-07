@@ -7,13 +7,14 @@
 
 * {
     padding: 0;
-    margin: 0;
+    box-sizing: border-box;
 }
 
 html, body {
     padding: 0;
     margin: 0;
-    border-radius: 0;
+    font-family: Rubik;
+    /* background-color: beige; */
 }
 
 header {
@@ -21,36 +22,38 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-header, img {
-    width: 100%;
-    height: 30vh;
+  height: 35vh;
 }
 
 h1 {
+    margin: 0;
     color: var(--white);
     text-align: center;
     font-family: Rubik;
     font-weight: 500;
     padding: 30px;
+    font-size: 1.6em;
 }
 
 .search-form {
     display: flex;
     max-width: 550px;
     margin: 0 auto;
+    padding: 0;
+    /* background: pink; */
 }
 
 .search-input {
     flex: 1;
-    padding: 0.6em 1em;
-    font-size: 1.2rem;
-    color: lightgrey;
+    padding: 1.6em 1.5em;
+    font-size: 0.88rem;
+    color: var(--dark-gray);
     border: none;
     border-radius: 18px 0 0 18px;
     outline: none;
-    height: 40px;
+    margin: 0 0 0 20px;
+    width: 60%;
+    cursor: pointer;
 }
 
 .search-button {
@@ -63,8 +66,9 @@ h1 {
     cursor: pointer;
     border-radius: 0 18px 18px 0;
     transition: background-color 0.3s ease;
-    height: 64px;
+    height: 66px;
     width: 60px;
+    margin: 0 20px 0 0;
 }
 
 .search-button:hover,
@@ -72,8 +76,120 @@ h1 {
     background-color: var(--very-dark-gray);
 }
 
+.info-panel {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 85%;
+    /* max-width: 600px; */
+    margin: 20px auto !important;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.info-label {
+    text-align: center;
+    color: var(--dark-gray);
+    font-size: 0.75em;
+    font-weight: 500;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.info-result {
+    text-align: center;
+    color: var(--black);
+    font-size: 1.25em;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.attribution {
+    margin-top: 800px;
+}
+
+#map {
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  background-color: beige;
+  z-index: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Desktop selectors */
+
 @media (min-width: 768px) {
+
   header {
     background-image: url('./images/pattern-bg-desktop.png');
   }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .search-input {
+    flex: 1;
+    padding: 0.6em 1.5em;
+    font-size: 1.2rem;
+    color: lightgrey;
+    border: none;
+    border-radius: 18px 0 0 18px;
+    outline: none;
+    font-weight: 400;
+}
+    
+.search-button {
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    padding: 0 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 0 18px 18px 0;
+    transition: background-color 0.3s ease;
+    height: 63px;
+    width: 60px;
+}
+.info-panel {
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 1rem;
+    gap: 0.5rem;
+    margin: 20px auto;
+    }
+
+.info-panel > div {
+  flex: 1;
+  padding: 0 1rem;
+  border-right: 1px solid var(--dark-gray);
+}
+
+.info-panel > div:last-child {
+  border-right: none;
+}
+
+.info-result {
+    font-size: 1.55rem;
+}
+
 }
