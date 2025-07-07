@@ -34,8 +34,8 @@
 ---
 
 ### ⚙️ Phase 4: JavaScript Functionality
-- [ ] Fetch IP/location on page load using IPify API
-- [ ] Populate info panel (IP, location, timezone, ISP)
+- [x] Fetch IP/location on page load using IPify API
+- [x] Populate info panel (IP, location, timezone, ISP)
 - [ ] Initialize LeafletJS map:
   - [ ] Add marker at IP location
   - [ ] Center view on marker
